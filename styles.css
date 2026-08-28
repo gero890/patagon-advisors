@@ -541,6 +541,7 @@ em, .italic { font-style: normal; color: var(--accent); }
   pointer-events: none;
 }
 .cta-band-inner { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: flex-start; gap: 2.1rem; max-width: 42rem; }
+.cta-band-full { min-height: 100svh; display: flex; align-items: center; padding-block: clamp(6rem, 11vw, 9.5rem); }
 .cta-band h2 { color: var(--cream); }
 .cta-band p { color: var(--cream-mute); font-size: 1.08rem; max-width: 46ch; }
 .cta-band-actions { display: flex; flex-wrap: wrap; gap: 1.1rem; margin-top: .6rem; }
