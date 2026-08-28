@@ -1,0 +1,90 @@
+{
+  "solutions-treasury": {
+    "src": "assets/img/solutions-treasury.webp",
+    "title": "Money makes the world go 'round.",
+    "creator": "Bohman",
+    "creator_url": "https://www.flickr.com/photos/79729522@N00",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/79729522@N00/219249582",
+    "source": "flickr"
+  },
+  "solutions-wealth": {
+    "src": "assets/img/solutions-wealth.webp",
+    "title": "renzo piano building workshop, peek & cloppenburg 1999-2005",
+    "creator": "seier+seier",
+    "creator_url": "https://www.flickr.com/photos/94852245@N00",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/94852245@N00/3338169165",
+    "source": "flickr"
+  },
+  "solutions-agro": {
+    "src": "assets/img/solutions-agro.webp",
+    "title": "Alta Italia",
+    "creator": "Coordenação-Geral de Observação da Terra/INPE",
+    "creator_url": "https://www.flickr.com/photos/153282474@N02",
+    "license": "by-sa",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/153282474@N02/33206742388",
+    "source": "flickr"
+  },
+  "about-meeting": {
+    "src": "assets/img/about-meeting.webp",
+    "title": "Boardroom Office Meeting Executive - Must Link to https://thoroughlyreviewed.com",
+    "creator": "ThoroughlyReviewed",
+    "creator_url": "https://www.flickr.com/photos/143842337@N03",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/143842337@N03/32590257662",
+    "source": "flickr"
+  },
+  "about-office": {
+    "src": "assets/img/about-office.webp",
+    "title": "corner modern office building facade",
+    "creator": "Desconocido",
+    "creator_url": "https://www.rawpixel.com/image/3303013/free-photo-image-business-building-apartment-architecture",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://www.rawpixel.com/image/3303013/free-photo-image-business-building-apartment-architecture",
+    "source": "rawpixel"
+  },
+  "contact-office": {
+    "src": "assets/img/contact-office.webp",
+    "title": "Investment",
+    "creator": "Semtrio",
+    "creator_url": "https://www.semtrio.com/",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/29149114797",
+    "source": "flickr"
+  },
+  "puerto-madero": {
+    "src": "assets/img/puerto-madero.webp",
+    "title": "Puerto Madero - Puente de la Mujer",
+    "creator": "Lima Pix",
+    "creator_url": "https://www.flickr.com/photos/57499798@N00",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/57499798@N00/9570736163",
+    "source": "flickr"
+  },
+  "hero": {
+    "src": "assets/img/hero.webp",
+    "title": "Cerro Paine Grande / Los Cuernos",
+    "creator": "Phillie Casablanca",
+    "creator_url": "https://www.flickr.com/photos/19451080@N00",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/19451080@N00/2052737042",
+    "source": "flickr"
+  }
+}
