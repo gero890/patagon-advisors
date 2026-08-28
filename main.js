@@ -152,23 +152,6 @@
   }
 
   /* ---------------------------------------------------------------
-     Scroll progress
-     --------------------------------------------------------------- */
-  function initScrollProgress() {
-    var bar = $("[data-scroll-progress]");
-    if (!bar) return;
-    var raf = null;
-    function update() {
-      var max = document.documentElement.scrollHeight - window.innerHeight;
-      var pct = max > 0 ? window.scrollY / max : 0;
-      bar.style.transform = "scaleX(" + pct + ")";
-      raf = null;
-    }
-    window.addEventListener("scroll", function () { if (!raf) raf = requestAnimationFrame(update); }, { passive: true });
-    update();
-  }
-
-  /* ---------------------------------------------------------------
      Reveal on scroll — threshold low + 6s safety net (gotcha A.8)
      --------------------------------------------------------------- */
   function initReveals() {
@@ -307,10 +290,8 @@
       video.playsInline = true;
       video.autoplay = true;
       video.preload = "auto";
-      video.playbackRate = 0.5; // calmer, more ambient motion
       video.setAttribute("aria-hidden", "true");
       video.poster = img.currentSrc || img.src;
-      video.addEventListener("loadedmetadata", function () { video.playbackRate = 0.5; });
       var source = document.createElement("source");
       source.src = src;
       source.type = "video/mp4";
@@ -383,7 +364,6 @@
     safe(fillContactRefs, "fillContactRefs");
 
     safe(initNav, "initNav");
-    safe(initScrollProgress, "initScrollProgress");
     safe(initReveals, "initReveals");
     safe(initSolutionsAccordion, "initSolutionsAccordion");
     safe(initMagnetic, "initMagnetic");

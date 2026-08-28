@@ -12,13 +12,10 @@
 
   <link rel="preload" as="image" href="assets/img/hero-video-poster.webp" fetchpriority="high">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230F141C'/%3E%3Cpolygon points='20,80 42,20 64,80' fill='none' stroke='%238FB8DE' stroke-width='4' opacity='0.5'/%3E%3Cpolygon points='40,80 58,32 82,80' fill='%238FB8DE'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=20260828j">
+  <link rel="stylesheet" href="styles.css?v=20260828o">
 </head>
 <body>
   <a class="skip-link" href="#main">Saltar al contenido</a>
-
-  <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
-
   <header class="nav">
     <div class="container nav-inner">
       <a class="brand" href="index.html">
@@ -26,7 +23,7 @@
         <span class="brand-mark">Patagon Advisors</span>
       </a>
       <div class="nav-cta-group">
-        <button class="nav-toggle" data-nav-toggle aria-label="Abrir menú" aria-expanded="false"><span></span></button>
+        <button class="nav-toggle" data-nav-toggle aria-label="Abrir menú" aria-expanded="false">Menú</button>
         <div class="nav-mobile" data-nav-mobile data-open="false" aria-hidden="true">
           <div class="nav-mobile-links" data-nav-mobile-links></div>
         </div>
@@ -78,7 +75,13 @@
     </section>
 
     <!-- ===================== CONTACTO (cierre 1ra parte) ===================== -->
-    <section class="cta-band cta-band-full">
+    <section class="cta-band cta-band-full cta-band-video">
+      <div class="cta-band-video-bg">
+        <div class="photo" data-bg-video="assets/video/cta-loop.mp4">
+          <img src="assets/img/cta-video-poster.webp" alt="Vista aérea del lago Nahuel Huapi, Patagonia" loading="lazy">
+        </div>
+      </div>
+      <div class="cta-band-video-scrim" aria-hidden="true"></div>
       <div class="container cta-band-inner" data-reveal>
         <span class="kicker on-dark">Hablemos</span>
         <h2>¿Quiere contarnos su situación?</h2>
@@ -133,6 +136,6 @@
   <script defer src="lib/gsap.min.js"></script>
   <script defer src="lib/ScrollTrigger.min.js"></script>
   <script defer src="lib/manifest.js"></script>
-  <script defer src="main.js?v=20260828j"></script>
+  <script defer src="main.js?v=20260828o"></script>
 </body>
 </html>
