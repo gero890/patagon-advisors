@@ -272,6 +272,10 @@ em, .italic { font-style: normal; color: var(--accent); }
 .brand-mark {
   font-family: var(--sans); font-size: .98rem; font-weight: 600;
   letter-spacing: .13em; text-transform: uppercase; color: var(--ink);
+  white-space: nowrap;
+}
+@media (max-width: 480px) {
+  .brand-mark { font-size: .78rem; letter-spacing: .07em; }
 }
 .brand-sub { font-family: var(--sans); font-size: .58rem; letter-spacing: .22em; text-transform: uppercase; color: var(--ink-mute); margin-top: .35rem; font-weight: 600; }
 .footer-brand .brand { align-items: flex-start; flex-direction: column; gap: 0; }
@@ -287,6 +291,7 @@ em, .italic { font-style: normal; color: var(--accent); }
   transition: opacity .25s var(--ease-out);
 }
 .nav-toggle:hover { opacity: .7; }
+.nav-toggle-icon { display: none; }
 
 .nav-scrim {
   position: fixed; inset: 0; z-index: 189; background: transparent;
@@ -314,6 +319,21 @@ em, .italic { font-style: normal; color: var(--accent); }
   transition: color .25s var(--ease-out);
 }
 .nav-mobile-links a:hover, .nav-mobile-links a.is-active { color: var(--accent); }
+
+/* Mobile: brand left, toggle right, hamburger icon instead of text */
+@media (max-width: 719px) {
+  .nav-inner { justify-content: space-between; }
+  .nav-inner > .brand { position: static; left: auto; top: auto; transform: none; }
+  .nav-toggle-text { display: none; }
+  .nav-toggle-icon {
+    display: block; width: 20px; height: 2px; background: var(--ink);
+    box-shadow: 0 -6px 0 var(--ink), 0 6px 0 var(--ink);
+  }
+  .nav-mobile {
+    left: auto; right: 0; align-items: flex-end; transform-origin: top right;
+  }
+  .nav-mobile-links { align-items: flex-end; }
+}
 
 /* =============================================================
    7. Hero

@@ -273,13 +273,13 @@
 
   /* ---------------------------------------------------------------
      Background hero video — progressive enhancement over the static
-     poster image already in the HTML. Intrusive per gotcha A.2, so it
-     is skipped entirely for reduced-motion and on narrow/mobile
-     viewports (bandwidth). The static <img> stays as permanent fallback.
+     poster image already in the HTML. Skipped for reduced-motion;
+     plays on all viewport widths (including mobile) so the background
+     is consistent everywhere. The static <img> stays as fallback if
+     autoplay is blocked.
      --------------------------------------------------------------- */
   function initBgVideo() {
     if (reduced) return;
-    if (window.innerWidth < 720) return;
     $$("[data-bg-video]").forEach(function (slot) {
       var src = slot.getAttribute("data-bg-video");
       var img = $("img", slot);
