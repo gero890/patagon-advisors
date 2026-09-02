@@ -574,6 +574,18 @@ em, .italic { font-style: normal; color: var(--accent); }
    ============================================================= */
 .team-grid { display: grid; gap: 1.8rem; }
 @media (min-width: 720px) { .team-grid { grid-template-columns: repeat(3, 1fr); } }
+
+/* Structure behind the partners — reuses .diff-grid / .diff-item */
+.structure-intro { margin-top: clamp(4.5rem, 8vw, 7rem); max-width: 60rem; }
+.structure-intro p { margin-top: 1.3rem; color: var(--ink-mute); max-width: 68ch; }
+.structure-grid { margin-top: clamp(2.5rem, 5vw, 3.5rem); }
+.structure-num { display: block; font-family: var(--serif); font-size: 1.9rem; color: var(--accent); opacity: .6; line-height: 1; margin-bottom: 1rem; }
+.structure-grid .diff-item h3 { margin-top: .15rem; }
+.structure-grid .diff-item {
+  transition: background-color .35s var(--ease-out);
+}
+.structure-grid .diff-item:hover { background: var(--bg-2); }
+
 .team-card { background: var(--dark-bg); color: var(--cream); border-radius: 3px; overflow: hidden; }
 .team-photo { position: relative; aspect-ratio: 4/4.4; background: var(--dark-bg-2); }
 .team-photo img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.05); }
