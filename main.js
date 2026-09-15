@@ -98,6 +98,7 @@
     var c = data.contact;
     if (!c) return;
     $$("[data-email]").forEach(function (el) { el.textContent = c.email; if (el.tagName === "A") el.href = "mailto:" + c.email; });
+    $$("[data-email-link]").forEach(function (el) { el.href = "mailto:" + c.email; });
     $$("[data-whatsapp-display]").forEach(function (el) { el.textContent = c.whatsappDisplay; });
     $$("[data-whatsapp-link]").forEach(function (el) {
       el.href = "https://wa.me/" + c.whatsappNumber + "?text=" + encodeURIComponent(c.whatsappMessage);
@@ -187,9 +188,9 @@
     index.addEventListener("click", function (e) {
       var row = e.target.closest("[data-solution-row]");
       if (!row) return;
-      var wasOpen = row.classList.contains("is-open");
+      var isOpen = row.classList.contains("is-open");
       $$("[data-solution-row]", index).forEach(function (r) { r.classList.remove("is-open"); });
-      if (!wasOpen) row.classList.add("is-open");
+      if (!isOpen) row.classList.add("is-open");
     });
   }
 
