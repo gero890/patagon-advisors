@@ -48,7 +48,7 @@ if ($nombre === "" || $email === "" || $mensaje === "" || !filter_var($email, FI
   exit;
 }
 
-$to      = "agustin.moresco@gmail.com";
+$to      = "agustin@atinversiones.com";
 $subject = "Nuevo contacto — Patagon Advisors" . ($area ? " · " . $area : "");
 
 $body  = "Nuevo mensaje desde el formulario ejecutivo de patagonadvisors.com.ar\n\n";
@@ -60,7 +60,7 @@ $body .= "Área de interés: " . ($area ?: "—") . "\n\n";
 $body .= "Mensaje:\n{$mensaje}\n";
 
 $headers = [];
-$headers[] = "From: Patagon Advisors <agustin.moresco@gmail.com>";
+$headers[] = "From: Patagon Advisors <no-reply@atinversiones.com>";
 $headers[] = "Reply-To: {$nombre} <{$email}>";
 $headers[] = "Content-Type: text/plain; charset=UTF-8";
 
