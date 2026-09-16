@@ -618,10 +618,10 @@ em, .italic { font-style: normal; color: var(--accent); }
    ============================================================= */
 .footer { background: var(--dark-bg); color: var(--cream-mute); padding-block: clamp(4.5rem, 8vw, 7rem) 2.2rem; }
 .footer-top { display: grid; gap: 3.2rem; padding-bottom: 3.6rem; border-bottom: 1px solid var(--dark-line); }
-@media (min-width: 860px) { .footer-top { grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 2.4rem; } }
+@media (min-width: 860px) { .footer-top { grid-template-columns: 1.3fr 1fr 1fr; gap: 2.4rem; } }
 .footer-brand .brand { color: var(--cream); }
 .footer-brand .brand-sub { color: var(--cream-mute); }
-.footer-tagline { margin-top: 1.3rem; max-width: 30ch; font-size: .92rem; }
+.footer-tagline { margin-top: .7rem; max-width: 30ch; font-size: .92rem; }
 .footer-col h4 { color: var(--cream); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; }
 .footer-col ul { margin-top: 1.3rem; display: flex; flex-direction: column; gap: .85rem; }
 .footer-col a { font-size: .92rem; transition: color .3s var(--ease-out); }
