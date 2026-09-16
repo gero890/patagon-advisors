@@ -280,6 +280,10 @@ em, .italic { font-style: normal; color: var(--accent); }
 .brand-sub { font-family: var(--sans); font-size: .58rem; letter-spacing: .22em; text-transform: uppercase; color: var(--ink-mute); margin-top: .35rem; font-weight: 600; }
 .footer-brand .brand { align-items: flex-start; flex-direction: column; gap: 0; }
 .footer-brand .brand-icon { margin-bottom: .6rem; }
+.footer-brand .brand-mark {
+  text-transform: none; letter-spacing: 0; font-weight: 600;
+  font-size: 1.05rem; line-height: 1.35; white-space: normal; max-width: 21ch;
+}
 
 .nav-cta-group { position: relative; display: flex; align-items: center; gap: 1.1rem; }
 
