@@ -48,7 +48,7 @@ if ($nombre === "" || $email === "" || $mensaje === "" || !filter_var($email, FI
   exit;
 }
 
-$to      = "agustin@atinversiones.com";
+$to      = "amoresco@iebproductores.com.ar";
 $subject = "Nuevo contacto — Patagon Advisors" . ($area ? " · " . $area : "");
 
 $body  = "Nuevo mensaje desde el formulario ejecutivo de patagonadvisors.com.ar\n\n";
